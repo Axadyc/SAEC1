@@ -1,0 +1,17 @@
+Design : 
+
+- Personnages pionts / monstres 
+- Cases
+- Decors 
+- Scene de combat 
+
+Back : 
+
+- Dé (+ affichage du chiffre du dé)
+- Déplacement personnage (+ scene de combat avec monstre)
+- Actions des différentes cases
+- Affichage des cases aleatoires
+
+En plus :
+
+- Menu du jeu
