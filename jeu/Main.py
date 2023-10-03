@@ -1,9 +1,12 @@
 import pygame
 from Plateau import Plateau
 from Joueur import Joueur
+from random import randint
 
-
-
+def chiffre_aleat():
+    
+    n  = randint(1, 6)
+    return n 
 
 def affiche_fenetre(p : Plateau, images : dict, taille_case : int, j : Joueur):
     for ligne in range(12):
@@ -21,7 +24,7 @@ def affiche_fenetre(p : Plateau, images : dict, taille_case : int, j : Joueur):
 def mouvement(j : Joueur, p : Plateau):
 
     player_x, player_y = j.position_joueur
-    result = p.chiffre_aleat()
+    result = chiffre_aleat()
     print(result)
     if result == 1:
         if p.plateau[player_y + 1][player_x] == 'p':
